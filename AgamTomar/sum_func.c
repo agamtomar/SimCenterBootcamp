@@ -2,7 +2,8 @@
 
 int sumInt(int a, int b);
 
-int main() {
+int main()
+{
 	int int1, int2, sum;
 	
 	printf("Enter first integer: ");
@@ -16,10 +17,10 @@ int main() {
 	printf("The sum of integers %d + %d is %d", int1, int2, sum);
 	
 	return (0);
-	}
+}
 
-int sumInt(int a, int b){
-	int c;
-	c = a + b;
-	return (c);
-	}
+
+int sumInt(int a, int b)
+{
+	return (a+b);
+}
