@@ -9,7 +9,7 @@ int main()
     scanf("%i", &num);
 
     int remainder = num % 2;
-    if(remainder = 1)
+    if(remainder == 1)
         printf("The number %i is odd\n", num);
     else
         printf("The number %i is even\n", num);

@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
     char* filename = NULL;
     getline(&filename, &size, stdin);
 
-    if(filename[0] = '\n' && filename[1] == '\0') //single equal sign is a bug (invalid condition that is always true)
+    if(filename[0] == '\n' && filename[1] == '\0') //single equal sign is a bug (invalid condition that is always true)
     {
         printf("File name is empty!");
         return -1;
@@ -68,7 +68,7 @@ bool isValidInt(char* line)
     {
         if(line[i]< '0' || line[i] > '9')
             return false;
-        //i++;//Commenting this line is a bug (infinite loop)
+            i++;//Commenting this line is a bug (infinite loop)
     }
 
     return true;

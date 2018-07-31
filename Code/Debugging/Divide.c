@@ -8,7 +8,7 @@ int main()
     printf("Enter Numerator:");
     scanf("%f", &num1);
     printf("Enter Denominator:");
-    scanf("%f", &num1);
+    scanf("%f", &num2);
     printf("%f / %f = %f\n", num1, num2, num1/num2 );
 
     return 0;

@@ -24,8 +24,8 @@ int main(int argc, char* argv[])
 //Implementation of a method to create 3x3 identity matrix
 int* createIdentity()
 {
-    int identity[9];//This is a local variable, we should not pass its address outside this method
-
+    //int identity[9];//This is a local variable, we should not pass its address outside this method
+    int *identity = (int*) malloc(9*sizeof(int));
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
